@@ -11,6 +11,14 @@ The main tool used for this project was Tableau. Several different SQL queries w
 - There may be a trend in the lielihood of returning a mailed ballot depending on the day of week it was issued with the weekend being less likely to be returned but this insight requires further investigation to be concluded robustly.
 - If a voter has not returned their mailed ballot after 35 days it is unlikely they will return the ballot.
 
+**Future Steps**
+The following are ideas could be considered if this project were taken further:
+- Create a pipeline to permanatly clean the data from the same error such as incorrect dates
+- Look to link the data to demographic data to get a better sense of the demographics of the voters who are more likely and less likely to return their ballot. This could make the canvassing process more efficient. To build on that even more it would be interesting to build a model which allocated voters a likelihood to return mailed ballot score which is dependent on various factors.
+- Use these analytics to run SQL scripts on the Civis database to get call lists. 
+    - This list would be a ranked list of voters for canvassers to call and encourage them to return ballots. 
+    - This list could be pulled daily and cross checked with the previous days call lists. This would require a call record to be kept to flag when a voter was last called to ensure canvassers do not call the same people day after day. 
+
 ## Data Source
 Georgia Abseentee Records
 
